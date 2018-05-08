@@ -1,0 +1,26 @@
+#building using gradle= gradle build
+#running using gradle and executing= gradle -PmainClass=Boo execute
+
+#removing gradle lock in server = find .gradle -type f -name "*.lock" | while read f; do sudo rm $f; done
+
+
+//
+//        Credentials credentials = WalletUtils.loadCredentials("test",
+//                "/home/shehin/snap/parity/11111/.local/share/io.parity.ethereum/keys/test/UTC--2018-04-29T14-02-52Z--988022f4-9eb2-118f-b4e8-d242e06253cc");
+//
+//        System.out.println(credentials.getAddress());
+//
+//
+//
+
+
+
+
+//                if( credentials.getAddress().equals( tx.getTo() )) {
+//
+//                    Logger.info( "This is my money! -> addr: {}, amt: {}",
+//                            credentials.getAddress(), tx.getValue() );
+//                }
+//
+//
+//

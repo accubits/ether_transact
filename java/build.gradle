@@ -1,0 +1,28 @@
+group 'javatestapp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+jar {
+    manifest {
+        attributes 'Main-Class' : 'EthereumNode'
+    }
+}
+task execute(type:JavaExec) {
+    main = 'EthereumNode'
+    classpath = sourceSets.main.runtimeClasspath
+}
+dependencies {
+    compile ('org.web3j:core:3.3.1')
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
+
+    compile group: 'commons-httpclient', name: 'commons-httpclient', version: '3.1'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
